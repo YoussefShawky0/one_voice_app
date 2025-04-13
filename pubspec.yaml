@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  audioplayers: ^6.4.0
 
 dev_dependencies:
   flutter_test:
@@ -17,3 +18,13 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+
+  assets:
+      - assets/images/numbers/
+      - assets/images/family_members/
+      - assets/images/colors/
+      - assets/sounds/colors/
+      - assets/sounds/numbers/
+      - assets/sounds/family_members/
+      - assets/sounds/phrases/
