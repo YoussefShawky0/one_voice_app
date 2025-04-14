@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:one_voice_app/components/item_info.dart';
+import 'package:one_voice_app/components/list_item.dart';
 import 'package:one_voice_app/models/item_model.dart';
 
 class NumberPage extends StatelessWidget {
@@ -55,12 +55,6 @@ class NumberPage extends StatelessWidget {
       audio: 'sounds/numbers/number_eight_sound.mp3',
     ),
     ItemModel(
-      image: 'assets/images/numbers/number_nine.png',
-      jpText: 'Kyuu',
-      enText: 'Nine',
-      audio: 'sounds/numbers/number_nine_sound.mp3',
-    ),
-    ItemModel(
       image: 'assets/images/numbers/number_ten.png',
       jpText: 'Juu',
       enText: 'Ten',
@@ -81,7 +75,10 @@ class NumberPage extends StatelessWidget {
       body: ListView.builder(
         itemCount: numbers.length,
         itemBuilder: (context, index) {
-          return ItemInfo(item: numbers[index]);
+          return ListItem(
+            item: numbers[index],
+            color: const Color.fromARGB(255, 205, 122, 33),
+          );
         },
       ),
     );

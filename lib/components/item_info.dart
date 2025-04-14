@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 import '../models/item_model.dart';
 
 class ItemInfo extends StatelessWidget {
-  const ItemInfo({super.key, required this.item});
+  const ItemInfo({super.key, required this.item, this.color});
 
   final ItemModel item;
-
+  final Color? color;
   @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
       height: 100,
-      color: const Color.fromARGB(255, 14, 87, 146),
+      color: color,
       child: Row(
         children: [
           Container(
