@@ -17,11 +17,15 @@ class Categories extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
+        margin: const EdgeInsets.only(bottom: 10),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(8),
+          color: color,
+        ),
         alignment: Alignment.centerLeft,
         padding: EdgeInsets.only(left: 20),
         width: double.infinity,
         height: 65,
-        color: color,
         child: Text(text!, style: TextStyle(fontSize: 25, color: Colors.white)),
       ),
     );

@@ -4,11 +4,11 @@ class ItemModel {
   final String audio;
   final String jpText;
   final String enText;
-  final String image;
+  final String? image;
 
   const ItemModel({
     required this.audio,
-    required this.image,
+    this.image,
     required this.jpText,
     required this.enText,
   });

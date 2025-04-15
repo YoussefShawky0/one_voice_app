@@ -15,10 +15,7 @@ class ItemInfo extends StatelessWidget {
       color: color,
       child: Row(
         children: [
-          Container(
-            color: const Color.fromARGB(162, 197, 211, 230),
-            child: Image.asset(item.image),
-          ),
+          Container(color: const Color.fromARGB(162, 197, 211, 230)),
           Padding(
             padding: EdgeInsets.only(left: 15.0),
             child: Column(
