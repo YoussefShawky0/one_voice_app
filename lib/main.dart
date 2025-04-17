@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'screens/home_page.dart';
 
 void main() {
@@ -10,6 +11,9 @@ class OneVoice extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: HomePage());
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
+    );
   }
 }
